@@ -8,115 +8,879 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <div class="img-container">
-                        <img src="src/img/logo.svg">
-                    </div>
+                <div class="logo-container">
+                    <img src="src/img/logo.svg">
                 </div>
             </div>
         </div>
     </header>
     <section>
-        <div class="container-search">
-            <div class="row">
-                <div class="col-4">
-                    <div class="box">
-                        <img class="moto2" src="src/img/Vector.svg">
-                        <div class="container-choice">
-                            <img class="moto" src="src/img/Vector (2).svg">
-                            <img class="moto1" src="src/img/Vector (1).svg">
+        <div class="container">
+            <div class="row mt-32 mb-22">
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="gray-text">
+                                მთავარი>
+                            </span>
                         </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="box-car1">
-                        <div class="car-describtion">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row justify-content-between">
-                                        <div class="col-3">
-                                            <img class="car" src="src/img/Bitmap (1).svg">
-                                        </div>
-                                        <div class="col-5">
-                                            
-                                        </div>
-                                    </div>
-                            </div>
+                        <div class="col-3">
+                            <span class="gray-text">
+                                ძიება>
+                            </span>
                         </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="box-car2">
-                        <div class="car-describtion">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row justify-content-between">
-                                        <div class="col-3">
-                                            <img class="car" src="src/img/Bitmap (2).svg">
-                                        </div>
-                                        <div class="col-5">
-                                            
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="box-car3">
-                        <div class="car-describtion">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row justify-content-between">
-                                        <div class="col-3">
-                                            <img class="car" src="src/img/Bitmap (3).svg">
-                                        </div>
-                                        <div class="col-5">
-                                            
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="box-car4">
-                        <div class="car-describtion">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row justify-content-between">
-                                        <div class="col-3">
-                                            <img class="car" src="src/img/Bitmap (4).svg">
-                                        </div>
-                                        <div class="col-5">
-                                            
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="box-car5">
-                        <div class="car-describtion">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="row justify-content-between">
-                                        <div class="col-3">
-                                            <img class="car" src="src/img/Bitmap.svg">
-                                        </div>
-                                        <div class="col-5">
-                                            
-                                        </div>
-                                    </div>
-                            </div>
+                        <div class="col-3">
+                            <span class="orange-text">
+                                იყიდება>
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="filter-box">
+                            <div class="filter-box-header">
+                                <div class="row">
+                                    <div class="col-4 d-flex justify-content-center active">
+                                        <div class="tab-container">
+                                            <div class="icon-box d-flex align-items-center">
+                                                <img src="src/img/Vector.svg">
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-center gray-bg">
+                                        <div class="tab-container">
+                                            <div class="icon-box d-flex align-items-center">
+                                                <img src="src/img/Vector (1).svg">
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-center gray-bg rds">
+                                        <div class="tab-container">
+                                            <div class="icon-box">
+                                                <img src="src/img/Vector (2).svg">
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-box-body">
+                                <label>გარიგების ტიპი</label>
+                                <select class="mb-20 mt-8" name="იყიდება" id="იყიდება">
+                                    <option value="ქირავდება">ქირავდება</option>
+                                    <option value="ქირავდება">ქირავდება</option>
+                                    <option value="ქირავდება">ქირავდება</option>
+                                    <option value="ქირავდება">ქირავდება</option>
+                                    <option value="ქირავდება">ქირავდება</option>
+                                </select>
+                                <label>მწარმოებელი</label>
+                                <select class="mb-20 mt-8" name="ყველა მწარმოებელი" id="ყველა მწარმოებელი">
+                                    <option value="ყველა მწარმოებელი">ყველა მწარმოებელი</option>
+                                    <option value="ყველა მწარმოებელი">ყველა მწარმოებელი</option>
+                                    <option value="ყველა მწარმოებელი">ყველა მწარმოებელი</option>
+                                    <option value="ყველა მწარმოებელი">ყველა მწარმოებელი</option>
+                                    <option value="ყველა მწარმოებელი">ყველა მწარმოებელი</option>
+                                </select>
+                                <label>კატეგორია</label>
+                                <select class="mb-20 mt-8" name="ყველა კატეგორია" id="ყველა კატეგორია">
+                                    <option value="ყველა კატეგორია">ყველა კატეგორია</option>
+                                    <option value="ყველა კატეგორია">ყველა კატეგორია</option>
+                                    <option value="ყველა კატეგორია">ყველა კატეგორია</option>
+                                    <option value="ყველა კატეგორია">ყველა კატეგორია</option>
+                                    <option value="ყველა კატეგორია">ყველა კატეგორია</option>
+                                </select>
+                            </div>
+                            <hr>
+                            <div class="filter-box-body">
+                                <div class="row justify-space-between">
+                                    <div class="col-2">
+                                        ფასი
+                                    </div>
+                                    <div class="col-2">
+                                        ნიშანი
+                                    </div>
+                                </div>
+                                <div class="row justify-space-between">
+                                    <div class="col-5">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-box-footer">
+                                <button class="search-btn">
+                                    ძებნა 197,963
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="car-filter">
+                            <div class="row justify-space-between">
+                                <div class="col-3">
+                                    <p>
+                                        176047 განცხადება
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row justify-space-between">
+                                        <div class="col-6">
+                                            <select name="ბოლო 3 საათი" id="ბოლო 3 საათი">
+                                                <option value="ბოლო 3 საათი">ბოლო 3 საათი</option>
+                                                <option value="ბოლო 3 საათი">ბოლო 3 საათი</option>
+                                                <option value="ბოლო 3 საათი">ბოლო 3 საათი</option>
+                                                <option value="ბოლო 3 საათი">ბოლო 3 საათი</option>
+                                                <option value="ბოლო 3 საათი">ბოლო 3 საათი</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="თარიღი კლებადი" id="თარიღი კლებადი">
+                                                <option value="თარიღი კლებადი">თარიღი კლებადი</option>
+                                                <option value="თარიღი ზრდადი">თარიღი ზრდადი</option>
+                                                <option value="ფასი კლებადი">ფასი კლებადი</option>
+                                                <option value="ფასი ზრდადი">ფასი ზრდადი</option>
+                                                <option value="გარბენი კლებადი">გარბენი კლებადი</option>
+                                                <option value="გარბენი ზრდადი">გარბენი ზრდადი</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img" src="src/img/Bitmap.svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="describtion-container">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="car-header-container">
+                                                        <p class="car-name"><b>LAND ROVER Range Rover Evoque</b><span class="car-year">2013 წელი</span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <p class="ganbajeba">განბაჟება 2,176 ₾</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="row justify-space-between">
+                                                                <div class="col-2">
+                                                                    <img class="flag-container" src="src/img/Union.svg">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="gzashia">გზაშია</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/pirveliicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        1.8 დატ. ჰიბრიდი
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img src="src/img/meoreicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        200 000 კმ
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/mesameicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        ავტომატიკა
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/meotxeicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        მარჯვენა
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end">
+                                                    <h2>
+                                                        40,159
+                                                        <img class="gel" src="src/img/valute.svg"></span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="naxva">
+                                                        589 ნახვა ~ 2 დღის წინ
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 justify-content-end justify-space-between">
+                                                    <img class="icons" src="src/img/Vector (3).svg">
+                                                    <img class="icons" src="src/img/Shape.svg">
+                                                    <img class="icons" src="src/img/guli.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img" src="src/img/Bitmap (1).svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="describtion-container">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="car-header-container">
+                                                        <p class="car-name"><b>LAND ROVER Range Rover Evoque</b><span class="car-year">2013 წელი</span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <p class="ganbajeba">განბაჟება 2,176 ₾</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="row justify-space-between">
+                                                                <div class="col-2">
+                                                                    <img class="flag-container" src="src/img/Union.svg">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="gzashia">გზაშია</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/pirveliicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        1.8 დატ. ჰიბრიდი
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img src="src/img/meoreicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        200 000 კმ
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/mesameicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        ავტომატიკა
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/meotxeicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        მარჯვენა
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end">
+                                                    <h2>
+                                                        40,159
+                                                        <img class="gel" src="src/img/valute.svg"></span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="naxva">
+                                                        589 ნახვა ~ 2 დღის წინ
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 justify-content-end justify-space-between">
+                                                    <img class="icons" src="src/img/Vector (3).svg">
+                                                    <img class="icons" src="src/img/Shape.svg">
+                                                    <img class="icons" src="src/img/guli.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img" src="src/img/Bitmap (2).svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="describtion-container">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="car-header-container">
+                                                        <p class="car-name"><b>LAND ROVER Range Rover Evoque</b><span class="car-year">2013 წელი</span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <p class="ganbajeba">განბაჟება 2,176 ₾</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="row justify-space-between">
+                                                                <div class="col-2">
+                                                                    <img class="flag-container" src="src/img/Union.svg">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="gzashia">გზაშია</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/pirveliicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        1.8 დატ. ჰიბრიდი
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img src="src/img/meoreicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        200 000 კმ
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/mesameicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        ავტომატიკა
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/meotxeicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        მარჯვენა
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end">
+                                                    <h2>
+                                                        40,159
+                                                        <img class="gel" src="src/img/valute.svg"></span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="naxva">
+                                                        589 ნახვა ~ 2 დღის წინ
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 justify-content-end justify-space-between">
+                                                    <img class="icons" src="src/img/Vector (3).svg">
+                                                    <img class="icons" src="src/img/Shape.svg">
+                                                    <img class="icons" src="src/img/guli.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img" src="src/img/Bitmap (3).svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="describtion-container">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="car-header-container">
+                                                        <p class="car-name"><b>LAND ROVER Range Rover Evoque</b><span class="car-year">2013 წელი</span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <p class="ganbajeba">განბაჟება 2,176 ₾</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="row justify-space-between">
+                                                                <div class="col-2">
+                                                                    <img class="flag-container" src="src/img/Union.svg">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="gzashia">გზაშია</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/pirveliicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        1.8 დატ. ჰიბრიდი
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img src="src/img/meoreicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        200 000 კმ
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/mesameicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        ავტომატიკა
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/meotxeicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        მარჯვენა
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end">
+                                                    <h2>
+                                                        40,159
+                                                        <img class="gel" src="src/img/valute.svg"></span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="naxva">
+                                                        589 ნახვა ~ 2 დღის წინ
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 justify-content-end justify-space-between">
+                                                    <img class="icons" src="src/img/Vector (3).svg">
+                                                    <img class="icons" src="src/img/Shape.svg">
+                                                    <img class="icons" src="src/img/guli.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img" src="src/img/Bitmap (4).svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="describtion-container">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="car-header-container">
+                                                        <p class="car-name"><b>LAND ROVER Range Rover Evoque</b><span class="car-year">2013 წელი</span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <p class="ganbajeba">განბაჟება 2,176 ₾</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="row justify-space-between">
+                                                                <div class="col-2">
+                                                                    <img class="flag-container" src="src/img/Union.svg">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="gzashia">გზაშია</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/pirveliicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        1.8 დატ. ჰიბრიდი
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img src="src/img/meoreicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        200 000 კმ
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/mesameicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        ავტომატიკა
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/meotxeicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        მარჯვენა
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end">
+                                                    <h2>
+                                                        40,159
+                                                        <img class="gel" src="src/img/valute.svg"></span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="naxva">
+                                                        589 ნახვა ~ 2 დღის წინ
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 justify-content-end justify-space-between">
+                                                    <img class="icons" src="src/img/Vector (3).svg">
+                                                    <img class="icons" src="src/img/Shape.svg">
+                                                    <img class="icons" src="src/img/guli.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img" src="src/img/Bitmap.svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="describtion-container">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="car-header-container">
+                                                        <p class="car-name"><b>LAND ROVER Range Rover Evoque</b><span class="car-year">2013 წელი</span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <p class="ganbajeba">განბაჟება 2,176 ₾</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="row justify-space-between">
+                                                                <div class="col-2">
+                                                                    <img class="flag-container" src="src/img/Union.svg">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="gzashia">გზაშია</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/pirveliicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        1.8 დატ. ჰიბრიდი
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img src="src/img/meoreicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        200 000 კმ
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/mesameicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        ავტომატიკა
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/meotxeicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        მარჯვენა
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end">
+                                                    <h2>
+                                                        40,159
+                                                        <img class="gel" src="src/img/valute.svg"></span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="naxva">
+                                                        589 ნახვა ~ 2 დღის წინ
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 justify-content-end justify-space-between">
+                                                    <img class="icons" src="src/img/Vector (3).svg">
+                                                    <img class="icons" src="src/img/Shape.svg">
+                                                    <img class="icons" src="src/img/guli.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="img" src="src/img/Bitmap (1).svg">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="describtion-container">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="car-header-container">
+                                                        <p class="car-name"><b>LAND ROVER Range Rover Evoque</b><span class="car-year">2013 წელი</span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <p class="ganbajeba">განბაჟება 2,176 ₾</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="row justify-space-between">
+                                                                <div class="col-2">
+                                                                    <img class="flag-container" src="src/img/Union.svg">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="gzashia">გზაშია</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-7">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/pirveliicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        1.8 დატ. ჰიბრიდი
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img src="src/img/meoreicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        200 000 კმ
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/mesameicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        ავტომატიკა
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-12 d-flex">
+                                                                    <div class="icon-container">
+                                                                        <img class="icon" src="src/img/meotxeicon.svg">
+                                                                    </div>
+                                                                    <p class="text">
+                                                                        მარჯვენა
+                                                                    </p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 d-flex justify-content-end">
+                                                    <h2>
+                                                        40,159
+                                                        <img class="gel" src="src/img/valute.svg"></span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <p class="naxva">
+                                                        589 ნახვა ~ 2 დღის წინ
+                                                    </p>
+                                                </div>
+                                                <div class="col-3 justify-content-end justify-space-between">
+                                                    <img class="icons" src="src/img/Vector (3).svg">
+                                                    <img class="icons" src="src/img/Shape.svg">
+                                                    <img class="icons" src="src/img/guli.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
 </body>
